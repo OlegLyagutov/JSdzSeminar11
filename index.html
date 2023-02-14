@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DZseminar 11</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="data.js"></script>
+   
+</head>
+
+<body>
+    <div class="conteiner">
+        <div class="header">
+            <p class="items">Fetured Items</p>
+            <p class="item-text">Shop for items based on what we featured in this week</p>
+        </div>
+        <div class="content"></div>
+        <template class="card_template">
+            <div class="card">
+                <img class="img" src="img/1.jpg" />
+                <p class="name">ELLERY X M'O CAPSULE</p>
+                <p class="text">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym
+                    Ellery teams up with Moda Operandi.</p>
+                <p class="price">$52.00</p>
+            </div>
+        </template>
+        <div class="footer">
+            <button class="button">Browse All Product</button>
+        </div>
+    </div>
+    <script>
+        const data = JSON.parse(dataProducts);
+        console.log(data);
+
+        const contentEl = document.querySelector(`.content`);
+        const templateEl = document.querySelector(`.card_template`);
+
+        data.forEach(element => {
+            const cardEl = templateEl.content.querySelector(`.card`).cloneNode(true);
+            const imgEl = cardEl.querySelector(`.img`);
+            imgEl.src = element.img;
+            const nameEl = cardEl.querySelector(`.name`);
+            nameEl.textContent = element.name;
+
+            const textEl = cardEl.querySelector(`.text`);
+            textEl.textContent = element.text;
+
+            const prriceEl = cardEl.querySelector(`.price`);
+            prriceEl.textContent = element.price;
+            contentEl.appendChild(cardEl);
+
+        });
+
+
+    </script>
+
+</body>
+
+</html>
