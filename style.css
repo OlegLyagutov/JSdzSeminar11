@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*  */
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.header {
+  background-color: white;
+  height: 203px;
+  display: flex;
+  font-size: 50px;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card {
+  width: 30%;
+  height: 581px;
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.img {
+
+  width: 360px;
+  height: 420px;
+}
+
+.items {
+
+  display: flex;
+  justify-content: space-evenly;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  margin-top: 96px;
+  color: #222222;
+}
+
+.item-text {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9F9F9F;
+  margin-bottom: 48px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  flex-wrap: wrap;
+  justify-content: center;
+  background: linear-gradient(0deg, #F16D7F, #F16D7F),
+      linear-gradient(0deg, #FF6A6A, #FF6A6A);
+  border: 1px solid #FF6A6A;
+  width: 211px;
+  height: 47px;
+  margin-top: 48.5px;
+  margin-bottom: 60.5px;
+
+
+}
+
+
+
+.text {
+justify-content: left;
+font-family: 'Lato';
+font-style: normal;
+font-weight: 300;
+width: 80%;
+font-size: 14px;
+line-height: 17px;
+padding-left: 18px;
+margin-top: 16px;
+color: #5D5D5D;
+}
+
+
+.name {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  padding-left: 18px;
+  margin-top: 25px;
+}
+.price {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  padding-left: 18px;
+  margin-top: 16px;
+  color: #F16D7F;
+}
+.money {
+  color: #F16D7F;
+}
+
+
